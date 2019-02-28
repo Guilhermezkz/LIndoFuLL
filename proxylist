@@ -1,0 +1,22 @@
+#/bin/bash
+
+echo -e "\033[1;33m ###########################################"
+echo -e "\033[1;33m- - - - -> \033[01;34m Capiturador de Proxy"
+echo -e "\033[1;33m ###########################################"
+
+echo -e "\033[1;31m ESCOLHA A QUANTIDADE)"
+read -p ": " quantidade
+echo $quantidade
+
+echo -e "\033[1;31m ESCOLHA O PROTOCOLO)"
+read -p ": " protocolo
+echo $protocolo
+
+echo -e "\033[1;31m ESCOLHA O COD DO PAiS DESEJADO (exemplo, brasil coloca  BR)"
+read -p ": " codigo
+echo $codigo
+clear
+
+echo -e "\033[1;31mC A P I T U R A N D O  P R O X Y"
+
+curl http://pubproxy.com/api/proxy?limit=$quantidade&format=txt&$protocolo=true&country=$codigo&type=$protocolo
