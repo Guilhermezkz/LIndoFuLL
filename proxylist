@@ -27,7 +27,7 @@ echo $protocolo
 echo $codigo
 echo proxylist
 
-wget -i /wget/tmp.txt http://pubproxy.com/api/proxy?limit=$quantidade&format=txt&$protocolo=true&country=$codigo&type=$protocolo
+http://pubproxy.com/api/proxy?limit=$quantidade&format=txt&$protocolo=true&country=$codigo&type=$protocolo
 
 exit 0
 fi
